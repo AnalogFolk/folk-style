@@ -41,17 +41,20 @@ Namespaces are one honking great idea -- let's do more of those!
 ### Consistency is important
 
 A style guide is about consistency. Consistency with this style guide is important. Consistency within a project is more
-important. Consistency within one module or function is the most important.
+important. Consistency within one module or function is the most important[¹][pep8-consistency]
+.
 
 ### Linting and Enforcing styles
 
 VS Code integrates well with PEP-8 requirements. It's necessary to install the [VS Code Python Extension][vs-code].
-Other IDEs are equally capable of handling linting and reformatting.
+Many other IDEs are also capable of handling [linting and reformatting][pylinting].
 
 It may also be expedient to enforce maintainability and coding standards through the use of a pre-commit hook such
 as [this one][pre-commit].
 
+[pep8-consistency]: https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds
 [vs-code]: https://github.com/Microsoft/vscode-python
+[pylinting]: https://pylint.pycqa.org/en/latest/user_guide/ide-integration.html
 [pre-commit]: https://github.com/scivision/gitMC/blob/main/examples/pre-commit
 
 ### Preferred standards
