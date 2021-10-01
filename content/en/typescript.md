@@ -7,13 +7,12 @@ category: JavaScript
 
 ## TypeScript
 
-TypeScript is a superset of JavaScript and is used to write
-code which is preprocessed into JavaScript at build time.
+TypeScript is a superset of JavaScript and is used to write code which is
+preprocessed into JavaScript at build time.
 
-There is not yet an 'official' guide or convention but most
-rules you use for your JavaScript code should extend to
-suitability for TypeScript as well. At this time TypeScript
-is not extensively deployed in projects with AnalogFolk.
+There is not yet an 'official' guide or convention but most rules you use for
+your JavaScript code should extend to suitability for TypeScript as well. At
+this time TypeScript is not extensively deployed in projects with AnalogFolk.
 
 The following advice is borrowed heavily from [Basarat Al Syed][ts-book]
 
@@ -42,42 +41,42 @@ The following advice is borrowed heavily from [Basarat Al Syed][ts-book]
 
 - Prefer not to use either for explicit unavailability
 
-#### Bad
-
 ```typescript
+/* BAD */
+
 let foo = { x: 123, y: undefined }
 ```
 
-#### Good
-
 ```typescript
+/* GOOD */
+
 let foo: { x: number; y?: number } = { x: 123 }
 ```
 
-- Use undefined in general (do consider returning an object like `{valid:boolean, value?:Foo}` instead)
-
-#### Bad
+- Use undefined in general (do consider returning an object like
+  `{valid:boolean, value?:Foo}` instead)
 
 ```typescript
+/* Bad */
 return null
 ```
 
-#### Good
-
 ```typescript
+/* Good */
 return undefined
 ```
 
 - Use null where it's a part of the API or conventional
 
-> Reason: It is conventional in Node.js e.g. error is null for NodeBack style callbacks.
+> Reason: It is conventional in Node.js e.g. error is null for NodeBack style
+> callbacks.
 
 - Use truthy check for objects being null or undefined
 
 ### Formatting
 
-IDEs should be used which allow typescript support and
-automatic formatting. It's also possible to use `tsfmt` on the command line.
+IDEs should be used which allow typescript support and automatic formatting.
+It's also possible to use `tsfmt` on the command line.
 
 - Prefer single quotes
 - Use 2 space, not tabs

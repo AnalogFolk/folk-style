@@ -8,12 +8,12 @@ category: Python
 ## Python
 
 Python is a programming language that lets you work more quickly and integrate
-your systems more effectively. [PEP-8][pep8] is the standard for coding conventions in
-the Python language and must be followed for all code.
+your systems more effectively. [PEP-8][pep8] is the standard for coding
+conventions in the Python language and must be followed for all code.
 
 Observance should also be made of [PEP-20 The Zen of Python][pep20].
 
-```
+```text
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -40,16 +40,18 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ### Consistency is important
 
-A style guide is about consistency. Consistency with this style guide is important. Consistency within a project is more
-important. Consistency within one module or function is the most important.
+A style guide is about consistency. Consistency with this style guide is
+important. Consistency within a project is more important. Consistency within
+one module or function is the most important.
 
 ### Linting and Enforcing styles
 
-VS Code integrates well with PEP-8 requirements. It's necessary to install the [VS Code Python Extension][vs-code].
-Other IDEs are equally capable of handling linting and reformatting.
+VS Code integrates well with PEP-8 requirements. It's necessary to install the
+[VS Code Python Extension][vs-code]. Other IDEs are equally capable of handling
+linting and reformatting.
 
-It may also be expedient to enforce maintainability and coding standards through the use of a pre-commit hook such
-as [this one][pre-commit].
+It may also be expedient to enforce maintainability and coding standards through
+the use of a pre-commit hook such as [this one][pre-commit].
 
 [vs-code]: https://github.com/Microsoft/vscode-python
 [pre-commit]: https://github.com/scivision/gitMC/blob/main/examples/pre-commit
@@ -72,8 +74,9 @@ income = (gross_wages
 
 #### Indentation
 
-No single approach for hanging indents is enforced above others, per the PEP-8 guidance. However, the
-adopted pattern should be internally consistent within any particular project.
+No single approach for hanging indents is enforced above others, per the PEP-8
+guidance. However, the adopted pattern should be internally consistent within
+any particular project.
 
 #### Quotes
 
@@ -81,7 +84,8 @@ Prefer single quotes for strings.
 
 #### Whitespace
 
-If operators with different priority are used, add whitespace around the operators with the lowest priority.
+If operators with different priority are used, add whitespace around the
+operators with the lowest priority.
 
 ```python
 # Correct:

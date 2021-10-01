@@ -7,34 +7,33 @@ category: JavaScript, front-end, back-end
 
 ## JavaScript
 
-It is important to note that JavaScript should be used to enhance the
-user's experience by adding engaging and interactive functionality. It
-is acceptable to use JavaScript to create an interactive widget (for
-example, a carousel or a lightbox), but it is not acceptable to use
-JavaScript where non-dynamic or "plain" HTML and CSS would in normal
-circumstances suffice - that is to say, JavaScript MUST be used only
-where it is strictly necessary. Examples of unnecessary JavaScript:
+It is important to note that JavaScript should be used to enhance the user's
+experience by adding engaging and interactive functionality. It is acceptable to
+use JavaScript to create an interactive widget (for example, a carousel or a
+lightbox), but it is not acceptable to use JavaScript where non-dynamic or
+"plain" HTML and CSS would in normal circumstances suffice - that is to say,
+JavaScript MUST be used only where it is strictly necessary. Examples of
+unnecessary JavaScript:
 
 - Using JavaScript where a normal anchor link (A) would suffice.
 - Using JavaScript to submit a form, where the form's action would suffice.
-- Using JavaScript to replace images on mouse rollover/rollout, where
-  CSS can achieve the same effect.
+- Using JavaScript to replace images on mouse rollover/rollout, where CSS can
+  achieve the same effect.
 
 It's recommended that you implement Prettier to automatically lint and format
 your code during editing.
 
 ### Syntax
 
-In common with the file formats and encodings conventions, indent with
-two spaces. Tabs MUST NOT be used. Lines SHOULD be kept to a reasonable
-length; < 100 characters is preferable. An editorConfig file should be
-included in a project to define the acceptable formatting rule for
-other developers.
+In common with the file formats and encodings conventions, indent with two
+spaces. Tabs MUST NOT be used. Lines SHOULD be kept to a reasonable length; <
+100 characters is preferable. An editorConfig file should be included in a
+project to define the acceptable formatting rule for other developers.
 
-Use of [Standard JS][standard-js] or [Prettier][prettier-js] is recommended
-for code. This allows consistent and predictable layout and formatting.
-Formatting rules should be defined in a project's prettier.rc or eslint.rc
-file to ensure that each developer uses the same set of rules & settings.
+Use of [Standard JS][standard-js] or [Prettier][prettier-js] is recommended for
+code. This allows consistent and predictable layout and formatting. Formatting
+rules should be defined in a project's prettier.rc or eslint.rc file to ensure
+that each developer uses the same set of rules & settings.
 
 #### .prettierrc
 
@@ -53,13 +52,13 @@ preferred set of simple sub-rules for formatting.
 
 ### Naming
 
-Variables and functions SHOULD have concise but meaningful names. When
-referring to a jQuery wrapped object (for example, a collection returned
-from a query selector), it is a common and very useful practice to
-prefix the variable name with the jQuery `$` sigil.
+Variables and functions SHOULD have concise but meaningful names. When referring
+to a jQuery wrapped object (for example, a collection returned from a query
+selector), it is a common and very useful practice to prefix the variable name
+with the jQuery `$` sigil.
 
-- You SHOULD use self-documenting names, except for enumeration variables,
-  which SHOULD be named i, j, k, and so on
+- You SHOULD use self-documenting names, except for enumeration variables, which
+  SHOULD be named i, j, k, and so on
 - You MUST use camelCase, including names that contain acronyms like "getCss"
   and "htmlLength"
 - You MUST name constructor functions with an initial uppercase letter.
@@ -76,8 +75,8 @@ prefix the variable name with the jQuery `$` sigil.
 Keeping scope small decreases the possibility of namespace collisions.
 
 - You SHOULD limit the scope of a variable to a single function.
-- You MAY use an anonymous function (IIFE) which is executed inline if
-  necessary to keep a variable out of the global scope.
+- You MAY use an anonymous function (IIFE) which is executed inline if necessary
+  to keep a variable out of the global scope.
 - Anonymous functions that are executed inline MUST be wrapped in parentheses.
 
 ```javascript
@@ -91,9 +90,9 @@ Keeping scope small decreases the possibility of namespace collisions.
 
 ### Braces and brackets
 
-The following style of indentation MUST be used for functions (this
-is referred to as the One True Brace Style and is a variant of that
-used by Kernighan and Ritchie):
+The following style of indentation MUST be used for functions (this is referred
+to as the One True Brace Style and is a variant of that used by Kernighan and
+Ritchie):
 
 ```javascript
 function func(arg1, arg2) {
@@ -109,29 +108,29 @@ function func(arg1, arg2) {
 Indentation and bracketing style should be enforced on save or pre-commit
 through an automated linting rule, such as in use for this documentation.
 
-Prettier as a code-quality tool is both highly opinionated and also automated
-so if it is implemented in a project, the code style enforcement looks after
+Prettier as a code-quality tool is both highly opinionated and also automated so
+if it is implemented in a project, the code style enforcement looks after
 itself.
 
 ### ES2015 & ES6
 
 As of v7, [Babel have deprecated the official Stage presets][babel-7]. This
-makes it tougher to set a mandatory and consistent level of support for
-language features which developers want to use, and rely on Babel to transpile
-them into your required platform support level. Use of `preset-env` allows a
-project-wide setting (based on browserlist) for babel to target the same
-support level as specified in the initial technical specification for a
-project. Generally though, for legibility, support and adoption of your code,
-lean toward stage-2 to stage-3 standards and avoid stage-1 and stage-0.
+makes it tougher to set a mandatory and consistent level of support for language
+features which developers want to use, and rely on Babel to transpile them into
+your required platform support level. Use of `preset-env` allows a project-wide
+setting (based on browserlist) for babel to target the same support level as
+specified in the initial technical specification for a project. Generally
+though, for legibility, support and adoption of your code, lean toward stage-2
+to stage-3 standards and avoid stage-1 and stage-0.
 
 It's recommended that you use a `.browserslistrc` file to mandate the support
 level for any transpilation but also to declare in version control the mandated
 support level for your project, based on that stated in the technical
 specification.
 
-[Babel upgrade][babel-upgrade] can be used in existing projects to project
-them into the right state for Babel 7 support. The table of language
-features as they stood at the point of being deprecated is as follows:
+[Babel upgrade][babel-upgrade] can be used in existing projects to project them
+into the right state for Babel 7 support. The table of language features as they
+stood at the point of being deprecated is as follows:
 
 ```json
 {
@@ -163,21 +162,21 @@ features as they stood at the point of being deprecated is as follows:
 }
 ```
 
-It is recommended to use `@babel/preset-env` ([docs][preset-env]) in projects, where additional
-settings are necessary and not covered by one of the common language presets offered by the
-Babel team.
+It is recommended to use `@babel/preset-env` ([docs][preset-env]) in projects,
+where additional settings are necessary and not covered by one of the common
+language presets offered by the Babel team.
 
-Frameworks [in common use][babel-frameworks] also offer ready-made Babel configurations and
-these are excellent and provide a consistent baseline for transpilation of JavaScript for
-use in browsers.
+Frameworks [in common use][babel-frameworks] also offer ready-made Babel
+configurations and these are excellent and provide a consistent baseline for
+transpilation of JavaScript for use in browsers.
 
 [preset-env]: https://babeljs.io/docs/en/babel-preset-env
 [babel-frameworks]: https://babeljs.io/docs/en/presets#other-integrations
 
 #### The New Bad Parts
 
-Generally, per the recommendations from [Douglas Crockford][better-parts],
-the following language constructs should be avoided;
+Generally, per the recommendations from [Douglas Crockford][better-parts], the
+following language constructs should be avoided;
 
 - Class (it's just syntactical sugar, added to appease Java programmers!)
 - [Proxies][proxies]
@@ -186,26 +185,33 @@ the following language constructs should be avoided;
 - [Symbols][symbols]
 - [Reflect][reflect]
 
-However, contrary to his advice, we like arrow functions. Be careful though
-if you're just using the keystroke saving and end up writing difficult-to-parse code.
+However, contrary to his advice, we like arrow functions. Be careful though if
+you're just using the keystroke saving and end up writing difficult-to-parse
+code.
 
-Remember the arrow-function gotchas; there's no `arguments` object inside an arrow
-function, and be careful when returning an object literal; it must be wrapped in
-parentheses.
+Remember the arrow-function gotchas; there's no `arguments` object inside an
+arrow function, and be careful when returning an object literal; it must be
+wrapped in parentheses.
 
 ```javascript
-;(() => console.log(arguments))(1, 2) // will raise ReferenceError: arguments is not defined
+// will raise ReferenceError: arguments is not defined
+;(() => console.log(arguments))(1, 2)
 
+// this will return undefined. 'foo: 1' is interpreted as a statement 
+// composed of a label and the literal 1
 ;(() => {
   foo: 1
-})() // this will return undefined. 'foo: 1' is interpreted as a statement composed of a label and the literal 1
+})() 
 ```
 
 [better-parts]: https://www.youtube.com/watch?v=XFTOG895C7c
 [proxies]: https://javascript.info/proxy
-[generators]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generator_functions
-[symbols]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
-[reflect]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect
+[generators]:
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generator_functions
+[symbols]:
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+[reflect]:
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect
 
 ##### Loops
 
@@ -215,9 +221,9 @@ parentheses.
 ### Commenting code
 
 - Short inline comments SHOULD generally follow a line
-- Functions and constructors, classes and modules SHOULD be preceded
-  by a header multi-line comment using [JSDoc syntax](jsdoc) to describe
-  parameters and return values
+- Functions and constructors, classes and modules SHOULD be preceded by a header
+  multi-line comment using [JSDoc syntax](jsdoc) to describe parameters and
+  return values
 
 ```javascript
 /**
@@ -233,15 +239,15 @@ function Book(title, author) {
 
 ### Frameworks and Libraries
 
-At project inception an agreement should be in place as to the frameworks
-and/or libraries of use. Even if no library is to be used, the specification
-should identify [a consistent pattern][osmani-patterns] (beyond just linting
-rules) to be used for the organisation of JavaScript within a project.
+At project inception an agreement should be in place as to the frameworks and/or
+libraries of use. Even if no library is to be used, the specification should
+identify [a consistent pattern][osmani-patterns] (beyond just linting rules) to
+be used for the organisation of JavaScript within a project.
 
 #### React
 
-Follow the [Airbnb React/JSX Style Guide][airbnb-react]. Except where it conflicts
-with Prettier.
+Follow the [Airbnb React/JSX Style Guide][airbnb-react]. Except where it
+conflicts with Prettier.
 
 It's recommended that you use the [importable config setting][npm-react-config]
 from NPM, to ensure conformance with industry standards.
@@ -256,29 +262,28 @@ npm install --save-dev eslint-config-react-app @typescript-eslint/eslint-plugin@
 
 #### Angular
 
-Analogfolk London have not historically used this monolithic framework. But if
-a project requires it, follow
-[the official Angular style guide][angular-official].
+Analogfolk London have not historically used this monolithic framework. But if a
+project requires it, follow [the official Angular style
+guide][angular-official].
 
 #### jQuery
 
-If you're using jQuery for a project in 2021 the implementation of the
-framework should be cleared with senior technologists. You MUST use version
-3.6 or higher.
+If you're using jQuery for a project in 2021 the implementation of the framework
+should be cleared with senior technologists. You MUST use version 3.6 or higher.
 
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust
 organisation of your code. Each UI element should be initialised as a widget.
 
 #### Vue
 
-Use [single file components][vue-single-file] to organise the components in
-your project. The [official Vue style guide][vue-style] should be followed.
+Use [single file components][vue-single-file] to organise the components in your
+project. The [official Vue style guide][vue-style] should be followed.
 
-There's a useful article on setting up your IDE for use with Vue and eslint
-[on Medium][vue-eslint-medium].
+There's a useful article on setting up your IDE for use with Vue and eslint [on
+Medium][vue-eslint-medium].
 
-The following list of useful best practices is based on
-[Vue Best Practices][vue-best] by Riccardo Polacci
+The following list of useful best practices is based on [Vue Best
+Practices][vue-best] by Riccardo Polacci
 
 ##### Clear event listeners
 
@@ -287,8 +292,8 @@ Ahh memory leaks. Remember to remove listeners created with `$on` by use of
 
 ##### Always use kebab-case for event names
 
-Events are transformed automatically into lower case so declare as they will
-be listened to.
+Events are transformed automatically into lower case so declare as they will be
+listened to.
 
 ```js
 // Emitting
@@ -349,11 +354,11 @@ should be enough simply to prepend `$_`.
 ##### Values used in a mixin should be acquired inside the mixin
 
 If we create a mixin which uses a value from the store but the value is not
-defined or grabbed from the store inside the mixin then the Component where
-the mixin is defined has to contain the property.
+defined or grabbed from the store inside the mixin then the Component where the
+mixin is defined has to contain the property.
 
-This is error prone. In order to avoid this, the value should be grabbed
-inside the mixin. Vue is clever enough to avoid duplication of work.
+This is error prone. In order to avoid this, the value should be grabbed inside
+the mixin. Vue is clever enough to avoid duplication of work.
 
 ##### Use PascalCase for single file components
 
@@ -368,8 +373,8 @@ which distinguishes them from other non pure components.
 
 ##### Use PascalCase for component names
 
-PascalCase is the convention for constructors and classes. It makes sense
-to also use this for Vue components.
+PascalCase is the convention for constructors and classes. It makes sense to
+also use this for Vue components.
 
 ##### Use the options order from the Vue style guide
 
@@ -378,14 +383,13 @@ convention][vue-options] can be found in the style guide.
 
 ##### Never use v-if on the same element as v-for
 
-If you do this, the whole list will have to be iterated through by
-your code in order to render the output of a component. It's a big
-performance sink.
+If you do this, the whole list will have to be iterated through by your code in
+order to render the output of a component. It's a big performance sink.
 
 ##### Actions must always return
 
-Vuex actions use async/await and promises. Not returning from an
-action will result in unpredictable code execution order.
+Vuex actions use async/await and promises. Not returning from an action will
+result in unpredictable code execution order.
 
 ```js
 /** BAD! */
@@ -430,8 +434,8 @@ This will output:
 
 ##### Use selectors inside actions and getters
 
-We create selectors for a reason, not only to be used all around the
-app, but also within the Vuex Store.
+We create selectors for a reason, not only to be used all around the app, but
+also within the Vuex Store.
 
 ##### Further Reading
 
@@ -442,14 +446,14 @@ app, but also within the Vuex Store.
 
 You may not need underscore/lodash. If you're targeting modern browsers there
 are [a number of native methods][underscore-native] you can use instead of the
-utility methods it supplies. However it does provide a uniform interface and
-API and therefore is supported for use in projects.
+utility methods it supplies. However it does provide a uniform interface and API
+and therefore is supported for use in projects.
 
 #### Svelte
 
 Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in
-production projects. It's recommended to use Vue or React until the
-framework is fully reviewed.
+production projects. It's recommended to use Vue or React until the framework is
+fully reviewed.
 
 ### Further reading
 
@@ -466,15 +470,19 @@ framework is fully reviewed.
 [airbnb-preset]: https://www.npmjs.com/package/eslint-config-airbnb
 [babel-7]: https://babeljs.io/blog/2018/07/27/removing-babels-stage-presets
 [babel-upgrade]: https://github.com/babel/babel-upgrade
-[osmani-patterns]: https://addyosmani.com/resources/essentialjsdesignpatterns/book
+[osmani-patterns]:
+  https://addyosmani.com/resources/essentialjsdesignpatterns/book
 [airbnb-react]: https://github.com/airbnb/javascript/tree/master/react
 [angular-official]: https://angular.io/guide/styleguide
 [jq-widget]: https://jqueryui.com/widget/
 [npm-react-config]: https://www.npmjs.com/package/eslint-config-react-app
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
 [vue-style]: https://vuejs.org/v2/style-guide/
-[vue-eslint-medium]: https://medium.com/@gogl.alex/how-to-properly-set-up-eslint-with-prettier-for-vue-or-nuxt-in-vscode-e42532099a9c
+[vue-eslint-medium]:
+  https://medium.com/@gogl.alex/how-to-properly-set-up-eslint-with-prettier-for-vue-or-nuxt-in-vscode-e42532099a9c
 [vue-best]: https://blog.usejournal.com/vue-js-best-practices-c5da8d7af48d
-[vue-options]: https://vuejs.org/v2/style-guide/#Component-instance-options-order-recommended
-[underscore-native]: https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
+[vue-options]:
+  https://vuejs.org/v2/style-guide/#Component-instance-options-order-recommended
+[underscore-native]:
+  https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
 [svelte-js]: https://svelte.dev/
