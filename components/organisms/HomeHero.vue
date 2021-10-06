@@ -24,8 +24,6 @@ export default {
 </script>
 
 <style scoped>
-@debug 'var(--color-hopeful)';
-
 .hero {
   background: radial-gradient(
       ellipse at bottom left,
@@ -40,11 +38,11 @@ export default {
 
 .title {
   @apply text-4xl sm:text-5xl text-gray-100;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
 .subtitle {
   @apply text-2xl sm:text-4xl text-gray-100;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 </style>

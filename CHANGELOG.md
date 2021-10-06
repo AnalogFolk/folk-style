@@ -1,6 +1,7 @@
 # CHANGELOG
 
-All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to this project will be documented in this file. This
+project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <div style="display: none;">
 
@@ -47,7 +48,7 @@ Need to update the section on Babel 7 and support for stages/features
 ### Changed
 
 - Removed out-dated link to Laravel Best Practices site (now squatted) and
-  replaced with a Github link
+  replaced with a GitHub link
 
 ## [3.2.0](https://github.com/AnalogFolk/folk-style/tree/v3.2.0) - 2021-08-13
 
@@ -104,7 +105,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Modified responsive footer
 - Consistent line-height
-- Screen reader text on Github icon link
+- Screen reader text on GitHub icon link
 
 ## [3.1.1](https://github.com/AnalogFolk/folk-style/tree/v3.1.1) - 2021-06-29
 
@@ -138,7 +139,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Changed
 
-- References to Bitbucket in chagelog into github tag links
+- References to Bitbucket in changelog into GitHub tag links
 
 ### Fixed
 

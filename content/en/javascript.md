@@ -197,11 +197,11 @@ wrapped in parentheses.
 // will raise ReferenceError: arguments is not defined
 ;(() => console.log(arguments))(1, 2)
 
-// this will return undefined. 'foo: 1' is interpreted as a statement 
+// this will return undefined. 'foo: 1' is interpreted as a statement
 // composed of a label and the literal 1
 ;(() => {
   foo: 1
-})() 
+})()
 ```
 
 [better-parts]: https://www.youtube.com/watch?v=XFTOG895C7c
@@ -222,7 +222,7 @@ wrapped in parentheses.
 
 - Short inline comments SHOULD generally follow a line
 - Functions and constructors, classes and modules SHOULD be preceded by a header
-  multi-line comment using [JSDoc syntax](jsdoc) to describe parameters and
+  multi-line comment using [JSDoc syntax][jsdoc] to describe parameters and
   return values
 
 ```javascript
@@ -287,7 +287,7 @@ Practices][vue-best] by Riccardo Polacci
 
 ##### Clear event listeners
 
-Ahh memory leaks. Remember to remove listeners created with `$on` by use of
+Ahh, memory leaks. Remember to remove listeners created with `$on` by use of
 `$off` when `destroyed()`
 
 ##### Always use kebab-case for event names
@@ -347,7 +347,7 @@ and the component has priority. This can lead to overlapping property issues.
 Prepend mixin properties with `$_` to avoid this namespace clash. It's a
 convention from the VueJs style guide.
 
-However in the style guide they suggest also adding the mixin name. i.e.
+However, in the style guide they suggest also adding the mixin name. i.e.
 `$_MixinName_methodName` however this can negatively impact readability. It
 should be enough simply to prepend `$_`.
 
@@ -357,19 +357,19 @@ If we create a mixin which uses a value from the store but the value is not
 defined or grabbed from the store inside the mixin then the Component where the
 mixin is defined has to contain the property.
 
-This is error prone. In order to avoid this, the value should be grabbed inside
+This is error-prone. In order to avoid this, the value should be grabbed inside
 the mixin. Vue is clever enough to avoid duplication of work.
 
 ##### Use PascalCase for single file components
 
 Pascal case has better integration with IDEs so use of this standard gives
-better QoL for devs, kebab-case is only a consideration in case insensitive
+better QoL for devs, kebab-case is only a consideration in case-insensitive
 operating systems.
 
 ##### Use a prefix for Base component names
 
 Presentational dumb or pure components should have a prefix in your project
-which distinguishes them from other non pure components.
+which distinguishes them from other non-pure components.
 
 ##### Use PascalCase for component names
 
@@ -411,7 +411,7 @@ Action done
 `
 ```
 
-Instead do this;
+Instead, do this;
 
 ```js
 // Store
@@ -446,8 +446,8 @@ also within the Vuex Store.
 
 You may not need underscore/lodash. If you're targeting modern browsers there
 are [a number of native methods][underscore-native] you can use instead of the
-utility methods it supplies. However it does provide a uniform interface and API
-and therefore is supported for use in projects.
+utility methods it supplies. However, it does provide a uniform interface and
+API and therefore is supported for use in projects.
 
 #### Svelte
 

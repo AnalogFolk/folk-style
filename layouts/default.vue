@@ -88,7 +88,7 @@ p {
 
   &:hover {
     &:after {
-      top: 0%;
+      top: 0;
     }
   }
 
