@@ -15,7 +15,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Removed
 
-### Fixed
+
 
 </div>
 
@@ -24,6 +24,10 @@ Need to update the section on Babel 7 and support for stages/features
 ### Changed
 
 - Updated dependencies
+
+### Fixed
+
+- Some linting and fixing typos
 
 ## [3.2.3](https://github.com/AnalogFolk/folk-style/tree/v3.2.3) - Unreleased
 
