@@ -12,16 +12,16 @@ Analogfolk prefer the use of [Laravel][laravel] as an MVC framework for PHP proj
 
 ### Syntax
 
-Unless otherwise specified, follow the guidelines in the PHP Standards 
-Recommendations. Particular attention should be given to 
+Unless otherwise specified, follow the guidelines in the PHP Standards
+Recommendations. Particular attention should be given to
 [PSR-1 (Basic Coding Standard)][psr-1] and
 [PSR-12 (Coding Style Guide)][psr-12].
 
 Some frameworks have adopted variations to the standards set by the PSRs, these
-are covered in brief below. But the key requirement is for a project to be 
+are covered in brief below. But the key requirement is for a project to be
 internally consistent. If possible, the use of automation and tooling to enforce
-standards should be implemented. The standard way to achieve this with PHP is to 
-use CodeSniffer, and rule-sets for this tool are available to cover the PSR rules 
+standards should be implemented. The standard way to achieve this with PHP is to
+use CodeSniffer, and rule-sets for this tool are available to cover the PSR rules
 and variations.
 
 #### Naming
@@ -33,7 +33,7 @@ and variations.
 ### Laravel
 
 The [Laravel Best Practice][laravel-best] guide expands on the PSR standards for
-naming and coding, with useful tips and guidance for producing quality code, 
+naming and coding, with useful tips and guidance for producing quality code,
 advice on tooling, and other great standard ways of working.
 
 ### WordPress

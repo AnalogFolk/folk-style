@@ -195,7 +195,6 @@ parentheses.
 
 ```javascript
 ;(() => console.log(arguments))(1, 2) // will raise ReferenceError: arguments is not defined
-
 ;(() => {
   foo: 1
 })() // this will return undefined. 'foo: 1' is interpreted as a statement composed of a label and the literal 1
