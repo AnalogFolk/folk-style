@@ -196,12 +196,11 @@ wrapped in parentheses.
 ```javascript
 // will raise ReferenceError: arguments is not defined
 ;(() => console.log(arguments))(1, 2)
-
-// this will return undefined. 'foo: 1' is interpreted as a statement 
+// this will return undefined. 'foo: 1' is interpreted as a statement
 // composed of a label and the literal 1
 ;(() => {
   foo: 1
-})() 
+})()
 ```
 
 [better-parts]: https://www.youtube.com/watch?v=XFTOG895C7c

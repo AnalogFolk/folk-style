@@ -61,5 +61,7 @@ documentation as standard.
 - Use an OutputCache filter for static pages
 - Consider using asynchronous controllers for long running requests
 
-[ms-docs-di]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2
-[ms-docs-csharp]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
+[ms-docs-di]:
+  https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2
+[ms-docs-csharp]:
+  https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions

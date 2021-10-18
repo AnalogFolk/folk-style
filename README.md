@@ -5,13 +5,13 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 ![GitHub](https://img.shields.io/github/license/AnalogFolk/folk-style?style=flat-square)
 
-An [opinionated but simple style guide][folk-style] for technical projects authored at
-Analogfolk.
+An [opinionated but simple style guide][folk-style] for technical projects
+authored at Analogfolk.
 
 ## Build Setup
 
-Local setup is simple enough; install dependencies and run the Nuxt project.
-The master branch automatically deploys to Netlify.
+Local setup is simple enough; install dependencies and run the Nuxt project. The
+master branch automatically deploys to Netlify.
 
 It's a static (nuxt generated) site. Individual guidelines are Markdown files,
 added to pages via `@nuxt/content`.
@@ -31,7 +31,8 @@ $ yarn start
 $ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout
+[Nuxt.js docs](https://nuxtjs.org).
 
 ## TODO
 
