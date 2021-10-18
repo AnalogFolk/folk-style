@@ -1,14 +1,16 @@
 ---
 title: PUG
-description: Initial guidance for working at AnalogFolk with the PUG (formerly Jade) templating language at
+description:
+  Initial guidance for working at AnalogFolk with the PUG (formerly Jade)
+  templating language at
 position: 8
 category: PUG
 ---
 
 ## Pug (formerly Jade)
 
-[Pug][pug-docs] is a terse templating/pre-processing language used to build HTML.
-All the standard practices for HTML apply where relevant to Pug templates
+[Pug][pug-docs] is a terse templating/pre-processing language used to build
+HTML. All the standard practices for HTML apply where relevant to Pug templates
 as well.
 
 Adapters are available for PHP, Ruby, and of course JavaScript. This means that

@@ -8,7 +8,8 @@ category: PHP
 ## PHP
 
 PHP is a server side scripting language used to generate dynamic pages.
-Analogfolk prefer the use of [Laravel][laravel] as an MVC framework for PHP projects.
+Analogfolk prefer the use of [Laravel][laravel] as an MVC framework for PHP
+projects.
 
 ### Syntax
 
@@ -38,14 +39,18 @@ advice on tooling, and other great standard ways of working.
 
 ### WordPress
 
-The [Official WordPress Coding Standards][wp-php] diverge somewhat from the
-PSR guidance. If you're coding in WordPress it may be necessary to
-employ [codesniffer][code-sniffer] and adopt the standards defined in the developer
+The [Official WordPress Coding Standards][wp-php] diverge somewhat from the PSR
+guidance. If you're coding in WordPress it may be necessary to employ
+[codesniffer][code-sniffer] and adopt the standards defined in the developer
 guide.
 
-- Use [tabs not spaces](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#indentation) 😥
-- Some variations with [spaces](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#space-usage)
-  and [braces](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#brace-style)
+- Use
+  [tabs not spaces](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#indentation)
+  😥
+- Some variations with
+  [spaces](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#space-usage)
+  and
+  [braces](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#brace-style)
 
 ### Further Reading
 
@@ -56,7 +61,8 @@ guide.
 [laravel]: https://laravel.com/
 [psr-1]: https://www.php-fig.org/psr/psr-1/
 [psr-12]: https://www.php-fig.org/psr/psr-12/
-[wp-php]: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/
+[wp-php]:
+  https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/
 [code-sniffer]: https://github.com/squizlabs/PHP_CodeSniffer#installation
 [laravel-best]: https://github.com/alexeymezenin/laravel-best-practices
 [solid]: https://medium.com/@dhkelmendi/solid-principles-made-easy-67b1246bcdf
