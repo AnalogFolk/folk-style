@@ -14,16 +14,15 @@ projects.
 ### Syntax
 
 Unless otherwise specified, follow the guidelines in the PHP Standards
-Recommendations. Particular attention should be given to
-[PSR-1 (Basic Coding Standard)][psr-1] and
-[PSR-12 (Coding Style Guide)][psr-12].
+Recommendations. Particular attention should be given to [PSR-1 (Basic Coding
+Standard)][psr-1] and [PSR-12 (Coding Style Guide)][psr-12].
 
 Some frameworks have adopted variations to the standards set by the PSRs, these
 are covered in brief below. But the key requirement is for a project to be
 internally consistent. If possible, the use of automation and tooling to enforce
 standards should be implemented. The standard way to achieve this with PHP is to
-use CodeSniffer, and rule-sets for this tool are available to cover the PSR rules
-and variations.
+use CodeSniffer, and rule-sets for this tool are available to cover the PSR
+rules and variations.
 
 #### Naming
 

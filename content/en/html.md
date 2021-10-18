@@ -36,22 +36,23 @@ HTML should be prepared using a template language.
 
 ### Nesting
 
-HTML Tags should be properly nested per the document specification.
-Incorrectly nested tags are usually not a problem if a templating language
-is used to generate HTML but can emerge if fragmented HTML is delivered from
-multiple partials.
+HTML Tags should be properly nested per the document specification. Incorrectly
+nested tags are usually not a problem if a templating language is used to
+generate HTML but can emerge if fragmented HTML is delivered from multiple
+partials.
 
-Ideally run pages through the [W3C markup validation service][w3c-validation]
-as part of build. This will reveal issues immediately.
+Ideally run pages through the [W3C markup validation service][w3c-validation] as
+part of build. This will reveal issues immediately.
 
 ### Accessibility
 
-Projects published by AnalogFolk must meet AA checkpoints from
-[WCAG 2.1 standards][wcag], and where possible, we should aim for support
-of AAA checkpoints.
+Projects published by AnalogFolk must meet AA checkpoints from [WCAG 2.1
+standards][wcag], and where possible, we should aim for support of AAA
+checkpoints.
 
 Full guidelines on implementation of accessible markup is outside the scope of
-this document. The [WAVE tool from WebAIM][wave] is a good way to audit your sites.
+this document. The [WAVE tool from WebAIM][wave] is a good way to audit your
+sites.
 
 [pug]: https://pugjs.org/api/getting-started.html
 [w3c-validation]: https://validator.w3.org/
